@@ -145,6 +145,7 @@ The script downloads the latest tables from Our World in Data into `data/.cache/
 ├── scripts/
 │   ├── build_dataset.py      # reproducible data pipeline
 │   └── requirements.txt
+├── assets/                   # favicon and app icon
 └── docs/                     # screenshots for this README
 ```
 

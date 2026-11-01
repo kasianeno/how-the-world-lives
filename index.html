@@ -4,6 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>How the World Lives, 1990–2023</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta name="theme-color" content="#0f1011">
 <meta name="description" content="Interactive data story: life expectancy, GDP per capita and population of 199 countries and territories, 1990–2023, from Our World in Data. Every filter runs SQL in the browser with DuckDB-WASM.">
 <meta property="og:title" content="How the World Lives, 1990–2023">
 <meta property="og:description" content="Interactive map and charts powered by SQL that runs in your browser (DuckDB-WASM + D3).">
@@ -103,7 +107,10 @@ body {
 .gh:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .brand { display: inline-flex; align-items: center; gap: 10px; font: 500 13px/1.2 var(--f-body); color: var(--ink-2); letter-spacing: 0.01em; }
 .brand .mark { width: 18px; height: 18px; border-radius: 50%; flex: none;
-  background: conic-gradient(var(--c-asia) 0 25%, var(--c-europe) 0 45%, var(--c-africa) 0 65%, var(--c-namerica) 0 80%, var(--c-samerica) 0 92%, var(--c-oceania) 0); }
+  background: conic-gradient(var(--c-asia) 0 25%, var(--c-europe) 0 45%, var(--c-africa) 0 65%, var(--c-namerica) 0 80%, var(--c-samerica) 0 92%, var(--c-oceania) 0);
+  /* donut, same as the favicon */
+  -webkit-mask: radial-gradient(circle, transparent 42%, #000 44%);
+  mask: radial-gradient(circle, transparent 42%, #000 44%); }
 .seg { display: inline-flex; padding: 3px; border-radius: 9px; background: var(--surface); border: 1px solid var(--border); flex-wrap: wrap; }
 .seg button {
   font: 500 13.5px/1 var(--f-body); color: var(--ink-2); background: transparent; border: 0; border-radius: 6px;
